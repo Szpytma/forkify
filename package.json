@@ -1,0 +1,25 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "Recipe application",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Szpytma/forkify.git"
+  },
+  "author": "Pawel Szpytma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Szpytma/forkify/issues"
+  },
+  "homepage": "https://github.com/Szpytma/forkify#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "parcel": "^2.8.2",
+    "sass": "^1.57.1"
+  }
+}
