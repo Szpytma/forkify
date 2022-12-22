@@ -57,7 +57,6 @@ class RecipeView {
     ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler));
   }
   #generateMarkup() {
-    console.log(this.#data);
     return ` 
     <figure class="recipe__fig">
       <img src="${this.#data.image}" alt="${
