@@ -11,7 +11,6 @@ class SearchView {
       e.preventDefault();
       handler();
     });
-    //['click'].forEach(ev => window.addEventListener(ev, handler));
   }
 
   _clearInput() {

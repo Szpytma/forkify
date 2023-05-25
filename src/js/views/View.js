@@ -3,14 +3,6 @@ import icons from 'url:../../img/icons.svg';
 export default class View {
   _data;
 
-  /**
-   * Render the received object tio the DOM
-   * @param {Object | Object[]} data The data to be rendered (e.g. recipe)
-   * @param {boolean} [render=true] If false create markup string instead og rendering to the DOM
-   * @returns {undefined | string} A markup string is returned if render =false
-   * @this {Object} View instance
-   */
-
   render(data, render = true) {
     if (!data || (Array.isArray(data) && data.length === 0))
       return this.renderError();
@@ -31,14 +23,14 @@ export default class View {
 
     newElements.forEach((newEl, i) => {
       const curEl = curElements[i];
-      // Updates changed text
+
       if (
         !newEl.isEqualNode(curEl) &&
         newEl.firstChild?.nodeValue.trim() !== ''
       ) {
         curEl.textContent = newEl.textContent;
       }
-      // Updates changed ATTRIBUTES
+
       if (!newEl.isEqualNode(curEl)) {
         Array.from(newEl.attributes).forEach(attr =>
           curEl.setAttribute(attr.name, attr.value)
