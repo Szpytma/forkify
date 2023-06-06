@@ -2,7 +2,7 @@
 
 **Here is my [Forkify](https://forkify-szp.netlify.app/) project!**
 
-Recipe application. [live demo](https://forkify-szp.netlify.app/)
+Recipe application. [live demo](https://forkify-szp.netlify.app/) is working with [forkify-api](https://forkify-api.herokuapp.com/)
 
 # Project description
 
